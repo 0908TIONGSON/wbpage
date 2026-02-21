@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowCare | Healthy Skin, Happy You</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-beige: #fdf5f0;
+            --soft-pink: #fce4ec;
+            --mint-green: #e8f5e9;
+            --clay-pink: #d4a373;
+            --text-dark: #4a4a4a;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-beige);
+            color: var(--text-dark);
+        }
+
+        .navbar-brand { font-weight: 600; color: var(--text-dark) !important; }
+        
+        /* Rounded aesthetic */
+        .card, .btn, .form-control {
+            border-radius: 20px;
+            border: none;
+        }
+
+        .btn-glow {
+            background-color: var(--clay-pink);
+            color: white;
+            padding: 10px 30px;
+        }
+
+        .btn-glow:hover {
+            background-color: #bc8a5f;
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            padding: 80px 0;
+            background: linear-gradient(to right, #fdf5f0, #fce4ec);
+        }
+
+        .hero-img {
+            border-radius: 40px;
+            max-width: 100%;
+        }
+
+        /* Tips Section */
+        .skin-type-card {
+            background: white;
+            transition: transform 0.3s;
+        }
+
+        .skin-type-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .routine-box {
+            background: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            height: 100%;
+        }
+
+        .download-banner {
+            background-color: var(--mint-green);
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        footer {
+            background: #f8f9fa;
+            padding: 40px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4">
+        <div class="container">
+            <a class="navbar-brand" href="#">GlowCare</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto nav nav-pills" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home">Home</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="pills-tips-tab" data-bs-toggle="pill" data-bs-target="#pills-tips">Tips & Routines</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact">Contact</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="tab-content" id="pills-tabContent">
+        
+        <div class="tab-pane fade show active" id="pills-home">
+            <section class="hero-section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h1 class="display-4 fw-bold mb-4">Healthy Skin,<br>Happy You.</h1>
+                            <p class="lead mb-4">Discover our expert tips and products for a radiant complexion. Your journey to glowing skin starts here.</p>
+                            <button class="btn btn-glow">Learn More</button>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <img src="https://tinyurl.com/2mbykub9" alt="Glow" class="hero-img shadow">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container my-5 py-5 text-center">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="p-4 shadow-sm bg-white rounded-4">
+                            <h5>✨ Skincare Tips</h5>
+                            <p class="small text-muted">Daily advice for all skin types.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 shadow-sm bg-white rounded-4">
+                            <h5>🛍️ Featured Products</h5>
+                            <p class="small text-muted">Handpicked for your routine.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 shadow-sm bg-white rounded-4">
+                            <h5>📈 Trending Routines</h5>
+                            <p class="small text-muted">What's working right now.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="tab-pane fade" id="pills-tips">
+            <div class="container py-5">
+                <h2 class="text-center mb-5 fw-bold">Your Skincare Guide</h2>
+                
+                <div class="row g-4 mb-5">
+                    <div class="col-md-4">
+                        <div class="skin-type-card p-4 text-center shadow-sm">
+                            <h3 class="h5">Oily Skin</h3>
+                            <p class="small">Balance sebum with lightweight, water-based formulas.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skin-type-card p-4 text-center shadow-sm">
+                            <h3 class="h5">Dry Skin</h3>
+                            <p class="small">Lock in moisture with rich creams and oils.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skin-type-card p-4 text-center shadow-sm">
+                            <h3 class="h5">Sensitive Skin</h3>
+                            <p class="small">Calm irritation with fragrance-free essentials.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 mb-5">
+                    <div class="col-md-6">
+                        <div class="routine-box shadow-sm">
+                            <h4 class="mb-3">☀️ Morning</h4>
+                            <ul class="list-unstyled">
+                                <li>💧 Cleanse</li>
+                                <li>🧴 Moisturize</li>
+                                <li>☀️ Sunscreen</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="routine-box shadow-sm">
+                            <h4 class="mb-3">🌙 Night</h4>
+                            <ul class="list-unstyled">
+                                <li>💧 Cleanse</li>
+                                <li>🧪 Treat (Serums)</li>
+                                <li>🧴 Moisturize</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="download-banner d-flex justify-content-between align-items-center">
+                    <div>
+                        <h5 class="mb-0">How to Repair Your Skin Barrier</h5>
+                        <p class="mb-0 small text-muted">Expert guide for damaged skin.</p>
+                    </div>
+                    <button class="btn btn-dark btn-sm rounded-pill px-4">Download Free Guide</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="pills-contact">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center mb-5">
+                        <h2 class="fw-bold">Glow With Us</h2>
+                        <p>Have a skin concern? We'd love to help.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bg-white p-5 shadow rounded-4">
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control bg-light" placeholder="Name">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control bg-light" placeholder="Email">
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select bg-light">
+                                        <option selected>Select Skin Concern</option>
+                                        <option>Acne</option>
+                                        <option>Dryness</option>
+                                        <option>Aging</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control bg-light" rows="4" placeholder="Message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-glow w-100">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="text-center">
+        <div class="container">
+            <div class="mb-3">
+                <span class="mx-2">Instagram</span>
+                <span class="mx-2">TikTok</span>
+                <span class="mx-2">YouTube</span>
+            </div>
+            <p class="small text-muted">hello@glowcare.com | (123) 456-7890</p>
+            <p class="small text-muted">&copy; 2026 GlowCare. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
